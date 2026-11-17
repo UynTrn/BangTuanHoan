@@ -1,0 +1,14 @@
+[
+    {
+        "KL-K": "Kim loại kiềm",
+        "KL-KT": "Kim loại kiềm thổ",
+        "KL-CT": "Kim loại chuyển tiếp",
+        "KL-HCT": "Kim loại hậu chuyển tiếp",
+        "AK": "Á kim",
+        "PK": "Phi kim",
+        "Halo": "Halogen",
+        "KH": "Khí hiếm",
+        "La": "Họ Lanthanide",
+        "Ac": "Họ Actinide"
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "id": "KT01",
+        "chuDe": "periodic",
+        "cauHoi": "Trong bảng tuần hoàn, các hàng ngang được gọi là gì?",
+        "dapAn": "Chu kì.",
+        "giaiThich": "Các hàng ngang trong bảng tuần hoàn được gọi là chu kì. Bảng tuần hoàn hiện có 7 chu kì."
+    },
+    {
+        "id": "KT02",
+        "chuDe": "periodic",
+        "cauHoi": "Trong bảng tuần hoàn, các cột dọc được gọi là gì?",
+        "dapAn": "Nhóm.",
+        "giaiThich": "Các cột dọc được gọi là nhóm. Các nguyên tố trong cùng một nhóm thường có tính chất hóa học tương tự nhau."
+    },
+    {
+        "id": "KT03",
+        "chuDe": "periodic",
+        "cauHoi": "Số hiệu nguyên tử của một nguyên tố cho biết điều gì?",
+        "dapAn": "Số proton trong hạt nhân nguyên tử.",
+        "giaiThich": "Số hiệu nguyên tử chính là số đơn vị điện tích hạt nhân, bằng số proton trong hạt nhân."
+    },
+    {
+        "id": "KT04",
+        "chuDe": "periodic",
+        "cauHoi": "Các nguyên tố nằm trong cùng một chu kì có điểm chung nào về cấu tạo nguyên tử?",
+        "dapAn": "Có cùng số lớp electron.",
+        "giaiThich": "Số thứ tự chu kì cho biết số lớp electron của nguyên tử ở trạng thái cơ bản."
+    },
+    {
+        "id": "KT05",
+        "chuDe": "periodic",
+        "cauHoi": "Các nguyên tố thuộc nhóm khí hiếm nằm ở nhóm nào trong bảng tuần hoàn?",
+        "dapAn": "Nhóm 18.",
+        "giaiThich": "Nhóm 18 gồm các nguyên tố khí hiếm như helium, neon, argon và nhiều nguyên tố khác."
+    },
+    {
+        "id": "KT06",
+        "chuDe": "periodic",
+        "cauHoi": "Halogen là tên gọi của nhóm nguyên tố nào?",
+        "dapAn": "Nhóm 17.",
+        "giaiThich": "Nhóm 17 là nhóm halogen, gồm fluorine, chlorine, bromine, iodine và các nguyên tố khác."
+    },
+    {
+        "id": "KT07",
+        "chuDe": "periodic",
+        "cauHoi": "Kim loại thường có khả năng dẫn điện và dẫn nhiệt như thế nào?",
+        "dapAn": "Phần lớn kim loại dẫn điện và dẫn nhiệt tốt.",
+        "giaiThich": "Đây là một trong những tính chất vật lí đặc trưng của kim loại. Tuy nhiên, mức độ dẫn điện và dẫn nhiệt khác nhau giữa các kim loại."
+    },
+    {
+        "id": "KT08",
+        "chuDe": "periodic",
+        "cauHoi": "Nguyên tử khối của một nguyên tố cho biết thông tin gì?",
+        "dapAn": "Khối lượng tương đối của nguyên tử nguyên tố đó.",
+        "giaiThich": "Nguyên tử khối cho biết khối lượng của nguyên tử tính theo đơn vị khối lượng nguyên tử (u). Giá trị trong bảng tuần hoàn thường là giá trị trung bình theo thành phần đồng vị tự nhiên."
+    },
+    {
+        "id": "UD01",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố nào thường được sử dụng để khử trùng nước trong hồ bơi?",
+        "dapAn": "Chlorine (Cl).",
+        "giaiThich": "Các hợp chất chứa chlorine được sử dụng phổ biến để khử trùng nước, giúp tiêu diệt nhiều vi sinh vật gây hại."
+    },
+    {
+        "id": "UD02",
+        "chuDe": "application",
+        "cauHoi": "Vì sao đồng (Cu) thường được dùng làm dây dẫn điện?",
+        "dapAn": "Vì đồng dẫn điện tốt và có thể kéo thành sợi dây.",
+        "giaiThich": "Đồng có độ dẫn điện cao, tương đối dễ gia công nên được sử dụng rộng rãi trong dây điện và thiết bị điện."
+    },
+    {
+        "id": "UD03",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố nào là thành phần quan trọng trong thép và được sử dụng rộng rãi trong xây dựng?",
+        "dapAn": "Sắt (Fe).",
+        "giaiThich": "Sắt là thành phần chính để sản xuất thép. Thép được sử dụng nhiều trong xây dựng nhà cửa, cầu đường và máy móc."
+    },
+    {
+        "id": "UD04",
+        "chuDe": "application",
+        "cauHoi": "Khí oxygen (O₂) có vai trò quan trọng nào đối với hô hấp của con người?",
+        "dapAn": "Cung cấp oxygen cần thiết cho quá trình hô hấp tế bào.",
+        "giaiThich": "Cơ thể sử dụng oxygen trong quá trình hô hấp tế bào để giải phóng năng lượng từ chất dinh dưỡng."
+    },
+    {
+        "id": "UD05",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố nào được sử dụng phổ biến để chế tạo vỏ lon nước giải khát?",
+        "dapAn": "Nhôm (Al).",
+        "giaiThich": "Nhôm nhẹ, dễ tạo hình và có khả năng chống ăn mòn tương đối tốt nên thường được dùng làm vỏ lon."
+    },
+    {
+        "id": "UD06",
+        "chuDe": "application",
+        "cauHoi": "Graphite trong ruột bút chì được tạo thành chủ yếu từ nguyên tố nào?",
+        "dapAn": "Carbon (C).",
+        "giaiThich": "Graphite là một dạng thù hình của carbon. Chất này có cấu trúc lớp nên có thể để lại vệt trên giấy khi viết."
+    },
+    {
+        "id": "UD07",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố nào là thành phần quan trọng trong nhiều loại phân bón giúp cây phát triển?",
+        "dapAn": "Nitrogen (N).",
+        "giaiThich": "Nitrogen là thành phần của nhiều hợp chất dùng trong phân đạm, giúp cây phát triển thân và lá."
+    },
+    {
+        "id": "UD08",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố nào có vai trò quan trọng trong cấu tạo xương và răng của con người?",
+        "dapAn": "Calcium (Ca).",
+        "giaiThich": "Calcium là thành phần khoáng chất quan trọng trong xương và răng, góp phần duy trì cấu trúc và độ chắc khỏe."
+    },
+    {
+        "id": "UD09",
+        "chuDe": "application",
+        "cauHoi": "Nguyên tố silicon (Si) được ứng dụng rộng rãi trong lĩnh vực nào?",
+        "dapAn": "Sản xuất linh kiện bán dẫn và vi mạch điện tử.",
+        "giaiThich": "Silicon là vật liệu bán dẫn quan trọng, được sử dụng để chế tạo chip và nhiều linh kiện điện tử."
+    },
+    {
+        "id": "UD10",
+        "chuDe": "application",
+        "cauHoi": "Khí helium (He) thường được dùng để bơm bóng bay vì đặc điểm nào?",
+        "dapAn": "Helium nhẹ hơn không khí và không cháy.",
+        "giaiThich": "Helium là khí nhẹ, có tính trơ hóa học và không cháy nên thường được dùng trong bóng bay."
+    }
+]

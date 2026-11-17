@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng tuần hoàn các nguyên tố hóa học</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/BangTuanHoan.css">
+    <link rel="stylesheet" href="css/DieuChinhGD.css">
+    <link rel="icon" type="image/png" href="icon/L.png">
+</head>
+<body>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" class="active">Trang chủ</a>
+                <a href="pages/HocTap.html">Học tập</a>
+                <a href="pages/quiz.html">Kiểm tra</a>
+                <a href="pages/about.html">Giới thiệu</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NỘI DUNG CHÍNH -->
+    <main>
+        <section class="periodic-table-section">
+            <div class="section-heading">
+                <h1>BẢNG TUẦN HOÀN CÁC NGUYÊN TỐ HÓA HỌC</h1>
+            </div>
+            <!-- BẢNG TUẦN HOÀN -->
+            <div class="periodic-table-wrapper">
+                <div id="periodicTable" class="periodic-table"></div>
+                <div class="special-rows">
+                    <div class="special-row">
+                        <div class="special-label">Lanthanide</div>
+                        <div id="lanthanideRow" class="periodic-table"></div>
+                    </div>
+                    <div class="special-row">
+                        <div class="special-label">Actinide</div>
+                        <div id="actinideRow" class="periodic-table"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHÚ THÍCH PHÂN LOẠI -->
+            <div id="elementLegend" class="element-legend"></div>
+        </section>
+    </main>
+
+    <!-- MODAL THÔNG TIN NGUYÊN TỐ -->
+    <div id="elementModal" class="element-modal" aria-hidden="true">
+        <!-- LỚP NỀN TỐI -->
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <!-- NỘI DUNG MODAL -->
+        <div class="modal-content"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="infoCardTitle">
+            <!-- NÚT ĐÓNG -->
+            <button
+                type="button"
+                class="modal-close"
+                id="closeElementModal"
+                aria-label="Đóng cửa sổ">
+                &times;
+            </button>
+            <!-- BỐ CỤC HAI CỘT -->
+            <div class="modal-body">
+                <!-- BÊN TRÁI: CAROUSEL THÔNG TIN -->
+                <div class="modal-info">
+                    <!-- THANH TIÊU ĐỀ VÀ ĐIỀU HƯỚNG -->
+                    <div class="info-carousel-header">
+                        <button
+                            type="button"
+                            id="prevInfoCard"
+                            class="info-arrow"
+                            aria-label="Thẻ trước">
+                            &#10094;
+                        </button>
+                        <span id="infoCardTitle">Thông tin bảng tuần hoàn</span>
+                        <button
+                            type="button"
+                            id="nextInfoCard"
+                            class="info-arrow"
+                            aria-label="Thẻ tiếp theo">
+                            &#10095;
+                        </button>
+                    </div>
+                    <!-- KHUNG CAROUSEL -->
+                    <div class="info-carousel-viewport">
+                        <div id="infoCarouselTrack" class="info-carousel-track">
+                            <!-- THẺ 1: THÔNG TIN BẢNG TUẦN HOÀN -->
+                            <section class="info-card">
+                                <div id="periodicInfo"></div>
+                            </section>
+                            <!-- THẺ 2: TÍNH CHẤT VẬT LÝ -->
+                            <section class="info-card">
+                                <div id="physicalInfo"></div>
+                            </section>
+                            <!-- THẺ 3: ỨNG DỤNG -->
+                            <section class="info-card">
+                                <div id="applicationInfo">
+                                    <div id="applicationContent"></div>
+                                    <div id="factContent"></div>
+                                    <div id="warningContent"></div>
+                                </div>
+                            </section>
+                            <!-- THẺ 4: LỊCH SỬ -->
+                            <section class="info-card">
+                                <div id="historyInfo"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- DẤU CHẤM CHUYỂN THẺ -->
+                    <div class="info-carousel-dots" id="infoCarouselDots">
+                        <button
+                            type="button"
+                            class="info-dot active"
+                            data-index="0"
+                            aria-label="Thông tin bảng tuần hoàn">
+                        </button>
+                        <button
+                            type="button"
+                            class="info-dot"
+                            data-index="1"
+                            aria-label="Tính chất vật lý">
+                        </button>
+                        <button
+                            type="button"
+                            class="info-dot"
+                            data-index="2"
+                            aria-label="Ứng dụng">
+                        </button>
+                        <button
+                            type="button"
+                            class="info-dot"
+                            data-index="3"
+                            aria-label="Lịch sử">
+                        </button>
+                    </div>
+                </div>
+                <!-- BÊN PHẢI: ẢNH VÀ MÔ HÌNH 3D -->
+                <div class="modal-visual-section">
+                    <!-- THANH CHUYỂN TAB -->
+                    <div class="visual-tabs">
+                        <button
+                            type="button"
+                            class="visual-tab active"
+                            data-target="photoPanel">
+                            Ảnh thực tế
+                        </button>
+                        <button
+                            type="button"
+                            class="visual-tab"
+                            data-target="atomPanel">
+                            Mô phỏng cấu trúc nguyên tử
+                        </button>
+                    </div>
+                    <!-- TAB ẢNH THỰC TẾ -->
+                    <div id="photoPanel" class="visual-panel active">
+                        <div class="element-image-wrapper">
+                            <img
+                                id="elementImage"
+                                src=""
+                                alt="Hình ảnh thực tế của nguyên tố">
+                            <p id="imageCaption">
+                                Hình ảnh thực tế của nguyên tố
+                            </p>
+                        </div>
+                    </div>
+                    <!-- TAB MÔ HÌNH 3D -->
+                    <div id="atomPanel" class="visual-panel">
+                        <div id="atomModelContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHÂN TRANG -->
+    <footer>
+        <p>
+            Bảng tuần hoàn các nguyên tố hóa học
+        </p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script type="module" src="js/BangTuanHoan.js"></script>
+</body>
+</html>

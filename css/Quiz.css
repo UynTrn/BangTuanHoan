@@ -1,0 +1,316 @@
+
+/*1. TRANG KIỂM TRA - FLASHCARD*/
+.quiz-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    min-height: 75vh;
+}
+/*2. BANNER*/
+.quiz-banner {
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    color: var(--primary-dark);
+    background: #F0D9F7;
+    box-shadow: var(--shadow);
+}
+.quiz-banner h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.quiz-banner p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/*3. THIẾT LẬP LƯỢT ÔN TẬP*/
+.quiz-setup {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+.quiz-setup h2 {
+    color: var(--primary-dark);
+    margin-bottom: 25px;
+}
+.setup-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.setup-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.setup-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: white;
+    outline: none;
+    transition: var(--transition);
+}
+.setup-group select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(185, 107, 210, 0.12);
+}
+.quiz-info {
+    margin: 20px 0;
+    padding: 15px;
+    background: #F8ECFC;
+    border-radius: 10px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+/*4. NÚT CHUNG*/
+.btn-primary,
+.btn-secondary,
+.btn-forgot,
+.btn-remembered {
+    padding: 12px 24px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+.btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+.btn-secondary {
+    background: #F0D9F7;
+    color: var(--primary-dark);
+}
+.btn-secondary:hover {
+    background: #EAD0F2;
+}
+/*5. KHU VỰC FLASHCARD*/
+.flashcard-area {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*6. TIẾN ĐỘ*/
+.quiz-progress {
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    margin-top: 10px;
+    background: #EAD5F1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#progressFill {
+    width: 10%;
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+.flip-guide {
+    color: var(--muted-color);
+    margin-bottom: 15px;
+}
+/*7. THẺ FLASHCARD*/
+.flashcard {
+    width: 100%;
+    height: 320px;
+    perspective: 1200px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+/*Khi lật thẻ*/
+.flashcard.is-flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: var(--shadow-hover);
+}
+.flashcard-front {
+    background: #F8ECFC;
+    border: 2px solid #E2A9F1;
+}
+.flashcard-back {
+    background: #F3EAF8;
+    border: 2px solid #C99AD9;
+    transform: rotateY(180deg);
+}
+.card-label {
+    color: var(--primary-dark);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.flashcard-back .card-label {
+    color: #269B70;
+}
+.flashcard-front h2,
+.flashcard-back h2 {
+    color: var(--text-color);
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.flashcard-front p,
+.flashcard-back p {
+    color: var(--muted-color);
+    font-size: 15px;
+    line-height: 1.6;
+}
+/*8. NÚT ĐÁNH GIÁ*/
+.card-actions {
+    margin: 20px 0;
+}
+.card-actions > p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-forgot {
+    background: #FCEDEC;
+    color: #C75B50;
+}
+.btn-forgot:hover {
+    background: #F8DAD7;
+}
+.btn-remembered {
+    background: #E4F3EF;
+    color: #269B70;
+}
+.btn-remembered:hover {
+    background: #CDE9DF;
+}
+/*9. KẾT QUẢ*/
+.quiz-result {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+.quiz-result h2 {
+    color: var(--primary-dark);
+    margin-bottom: 25px;
+}
+.result-stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.result-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    background: #F8ECFC;
+}
+.result-item span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+.result-item p {
+    margin-top: 8px;
+    color: var(--muted-color);
+}
+#resultMessage {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+/*10. ẨN CÁC KHU VỰC CHƯA SỬ DỤNG*/
+[hidden] {
+    display: none !important;
+}
+/*11. RESPONSIVE*/
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 94%;
+        margin: 20px auto;
+    }
+    .quiz-banner {
+        padding: 25px 15px;
+    }
+    .quiz-banner h1 {
+        font-size: 24px;
+    }
+    .quiz-setup,
+    .quiz-result {
+        padding: 20px;
+    }
+    .flashcard {
+        height: 300px;
+    }
+    .flashcard-front,
+    .flashcard-back {
+        padding: 20px;
+    }
+    .flashcard-front h2,
+    .flashcard-back h2 {
+        font-size: 21px;
+    }
+    .action-buttons {
+        flex-direction: column;
+    }
+    .result-stats {
+        gap: 12px;
+    }
+}

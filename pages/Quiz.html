@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra - Bảng tuần hoàn</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Quiz.css">
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="../index.html">Trang chủ</a>
+                <a href="HocTap.html">Học tập</a>
+                <a href="quiz.html" class="active">Kiểm tra</a>
+                <a href="about.html">Giới thiệu</a>
+            </div>
+        </div>
+    </nav>
+    <main class="quiz-container">
+        <!-- Giới thiệu -->
+        <section class="quiz-banner">
+            <h1>Ôn tập cùng Flashcard</h1>
+            <p>
+                Khám phá kiến thức về các nguyên tố hóa học
+                thông qua những thẻ câu hỏi ngẫu nhiên.
+            </p>
+        </section>
+        <!-- Thiết lập lượt ôn tập -->
+        <section id="quizSetup" class="quiz-setup">
+            <h2>Bắt đầu ôn tập</h2>
+            <div class="setup-group">
+                <label for="topicSelect">Chủ đề ôn tập</label>
+                <select id="topicSelect">
+                    <option value="all">Tất cả chủ đề</option>
+                    <option value="element">Thông tin nguyên tố</option>
+                    <option value="periodic">Kiến thức bảng tuần hoàn</option>
+                    <option value="application">Ứng dụng thực tế</option>
+                </select>
+            </div>
+            <div class="quiz-info">
+                <p><strong>10 thẻ</strong> trong mỗi lượt ôn tập</p>
+                <p>Câu hỏi được chọn ngẫu nhiên</p>
+            </div>
+            <button id="startQuiz" class="btn-primary">
+                Bắt đầu
+            </button>
+        </section>
+        <!-- Khu vực Flashcard -->
+        <section id="flashcardArea" class="flashcard-area" hidden>
+            <div class="quiz-progress">
+                <span id="cardCounter">Thẻ 1/10</span>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+            <p class="flip-guide">
+                Hãy thử trả lời trước khi lật thẻ nhé!
+            </p>
+            <!-- Thẻ câu hỏi -->
+            <div id="flashcard" class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <span class="card-label">CÂU HỎI</span>
+                        <h2 id="cardQuestion"></h2>
+                        <p>Nhấn vào thẻ để xem đáp án</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <span class="card-label">ĐÁP ÁN</span>
+                        <h2 id="cardAnswer"></h2>
+                        <p id="cardExplanation"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Đánh giá mức độ ghi nhớ -->
+            <div id="cardActions" class="card-actions" hidden>
+                <p>Bạn đã nhớ đáp án chưa?</p>
+                <div class="action-buttons">
+                    <button id="forgotButton" class="btn-forgot">
+                        Chưa nhớ
+                    </button>
+                    <button id="rememberedButton" class="btn-remembered">
+                        Đã nhớ
+                    </button>
+                </div>
+            </div>
+            <button id="nextCardButton" class="btn-primary" hidden>
+                Thẻ tiếp theo
+            </button>
+        </section>
+        <!-- Kết quả lượt ôn tập -->
+        <section id="quizResult" class="quiz-result" hidden>
+            <h2>Hoàn thành lượt ôn tập!</h2>
+            <div class="result-stats">
+                <div class="result-item">
+                    <span id="rememberedCount">0</span>
+                    <p>Đã nhớ</p>
+                </div>
+                <div class="result-item">
+                    <span id="forgotCount">0</span>
+                    <p>Chưa nhớ</p>
+                </div>
+            </div>
+            <p id="resultMessage"></p>
+            <div class="result-buttons">
+                <button id="reviewButton" class="btn-secondary">
+                    Ôn lại thẻ chưa nhớ
+                </button>
+
+                <button id="restartButton" class="btn-primary">
+                    Lượt mới
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="../js/Quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+/*1. MÀN HÌNH MÁY TÍNH BẢNG Kích thước tối đa: 1024px*/
+@media screen and (max-width: 1024px) {
+    main {
+        width: 94%;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .periodic-table-section {
+        padding: 16px;
+    }
+    .periodic-table {
+        min-width: 1100px;
+    }
+    .special-rows {
+        min-width: 1100px;
+    }
+}
+/*2. MÀN HÌNH ĐIỆN THOẠI Kích thước tối đa: 768px*/
+@media screen and (max-width: 768px) {
+    /*Header*/
+    header {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    header p {
+        font-size: 13px;
+    }
+    /*Thanh điều hướng*/
+    .nav-container {
+        justify-content: center;
+        padding: 5px 10px;
+    }
+    nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    /*Nội dung chính*/
+    main {
+        width: 96%;
+        margin: 15px auto;
+    }
+    .page-title h2 {
+        font-size: 21px;
+    }
+    .content-box {
+        padding: 15px;
+    }
+    /*Các khu vực bảng tuần hoàn*/
+    .periodic-table-section {
+        padding: 12px;
+    }
+    .periodic-table-section h2 {
+        font-size: 18px;
+    }
+    /*Không ép bảng tuần hoàn co lại quá nhỏ. Cho phép người dùng cuộn ngang.*/
+    .periodic-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .periodic-table {
+        min-width: 1100px;
+    }
+    .special-rows {
+        min-width: 1100px;
+    }
+    /*Chú giải*/
+    .legend {
+        gap: 10px 14px;
+    }
+    .legend-item {
+        font-size: 12px;
+    }
+    /*Các thẻ nội dung*/
+    .card {
+        padding: 15px;
+    }
+    /*Footer*/
+    footer {
+        padding: 20px 12px;
+    }
+}
+/*3. MÀN HÌNH ĐIỆN THOẠI NHỎ Kích thước tối đa: 480px*/
+@media screen and (max-width: 480px) {
+    /*Header*/
+    header h1 {
+        font-size: 20px;
+    }
+    header p {
+        font-size: 12px;
+    }
+    /*Menu*/
+    .nav-container {
+        gap: 0;
+    }
+    nav a {
+        padding: 9px 8px;
+        font-size: 12px;
+    }
+    /*Tiêu đề*/
+    .page-title h2 {
+        font-size: 19px;
+    }
+    .page-title p {
+        font-size: 13px;
+    }
+    /*Khung nội dung*/
+    .content-box {
+        padding: 12px;
+        border-radius: 9px;
+    }
+    /*Nút bấm*/
+    .btn {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+    /*Ô nhập liệu*/
+    .form-control {
+        padding: 10px;
+        font-size: 13px;
+    }
+    /*Cửa sổ thông tin chi tiết*/
+    .detail-content {
+        width: 100%;
+        max-height: 90vh;
+        padding: 20px 15px;
+    }
+    .detail-symbol {
+        font-size: 40px;
+    }
+    .detail-name {
+        font-size: 20px;
+    }
+    .detail-info {
+        grid-template-columns: 1fr;
+    }
+    /*Footer*/
+    footer {
+        font-size: 12px;
+    }
+}
